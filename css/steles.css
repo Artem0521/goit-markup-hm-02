@@ -1,0 +1,108 @@
+/* основной текс #757575  */
+
+/* вторичний цвет текста #212121 */
+
+/* белый цвет #FFFFFF */
+
+/* акцент #2196F3 */
+
+/* цвет фона #E5E5E5 */
+/* вторичный цвет фона #F5F4FA */
+/* Цвет логотипа  #000000 */
+
+
+:root {
+    --primary-text-color: #757575;
+
+    --secondary-text-color: #212121;
+
+    --white-text-color: #FFFFFF;
+
+    --accent-color: #2196F3;
+
+    --main-fon-color: #F5F4FA;
+
+    --secondary-fon-color:#E5E5E5;
+
+    --logo-color: #000000;
+}
+
+
+body  {
+    background-color: var(--main-fon-color);
+    color: var(--primary-text-color);
+}
+ul {
+    list-style: none;
+}
+
+
+/* Стили index html */
+
+/* Logo */
+
+.logo {
+    
+    color: var(--logo-color);
+}
+.logo-web  {
+    color: var(--accent-color);
+}
+
+
+/* Site nav */
+
+.site-nav .link {
+    color: var(--secondary-text-color);
+}
+.site-nav .link.current {
+    color: var(--accent-color);
+} 
+.adress-nav .link {
+    color: var(--primary-text-color);
+}
+.adress-nav .link:hover,
+.adress-nav .link:focus {
+    color: var(--accent-color)
+}
+
+
+/* Hero */
+
+.hero {
+    --fon-color:#2F303A;
+    background-color: var(--fon-color) 
+}
+.hero .title {
+    color: var(--white-text-color);
+}
+
+.button.order {
+    background-color: var(--accent-color);
+    color: var(--white-text-color)
+}
+
+
+
+/* Feature */
+
+.feature .title {
+    color: var(--secondary-text-color);
+}
+
+/* чем мы занимаемся */
+
+
+/* Наща клманда */
+.team {
+    background-color: var(--secondary-fon-color);
+}
+.team .title {
+    color: var(--secondary-text-color) ;
+}
+.team-list .title {
+    color: var(--secondary-text-color)
+}
+
+
+/* Подвал */
