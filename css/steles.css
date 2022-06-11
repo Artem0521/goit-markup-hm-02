@@ -6,8 +6,11 @@
 
 /* акцент #2196F3 */
 
-/* цвет фона #E5E5E5 */
+/* цвет фона #FFFFFF */
+
 /* вторичный цвет фона #F5F4FA */
+/* третий цвет фона #2F303A */
+/* адресс в футоре цвет rgba(255, 255, 255, 0.6) */
 /* Цвет логотипа  #000000 */
 
 
@@ -20,9 +23,13 @@
 
     --accent-color: #2196F3;
 
-    --main-fon-color: #F5F4FA;
+    --main-fon-color: #FFFFFF;
 
-    --secondary-fon-color:#E5E5E5;
+    --secondary-fon-color:#F5F4FA;
+
+    --third-fon-color: #2F303A;
+
+    --footer-adress-color: rgba(255, 255, 255, 0.6);
 
     --logo-color: #000000;
 }
@@ -106,3 +113,39 @@ ul {
 
 
 /* Подвал */
+.under {
+    background-color: var(--third-fon-color);
+}
+.log {
+    color: var(--white-text-color);
+}
+.adress {
+    color: var(--white-text-color);
+}
+.contact {
+    color: var(--footer-adress-color);
+}
+
+
+
+
+/* Порфолио разметка */
+
+/* кнопки */
+
+.button {
+    background-color: var(--main-fon-color);
+    color: var(--secondary-text-color)
+}
+.button:hover,
+.button:focus {
+    background-color: var(--accent-color);
+    color: var(--white-text-color)
+}
+
+
+/* Проект стилизация */
+
+.project .title {
+    color: var(--secondary-text-color)
+}
