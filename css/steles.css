@@ -9,7 +9,9 @@
 /* цвет фона #FFFFFF */
 
 /* вторичный цвет фона #F5F4FA */
+
 /* третий цвет фона #2F303A */
+
 /* адресс в футоре цвет rgba(255, 255, 255, 0.6) */
 /* Цвет логотипа  #000000 */
 
@@ -38,8 +40,14 @@
 body  {
     background-color: var(--main-fon-color);
     color: var(--primary-text-color);
+
+    font-family: Roboto, sans-serif;
+
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 }
-ul {
+.list{
     list-style: none;
 }
 
@@ -51,6 +59,12 @@ ul {
 .logo {
     
     color: var(--logo-color);
+
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
 }
 .logo-web  {
     color: var(--accent-color);
@@ -61,16 +75,30 @@ ul {
 
 .site-nav .link {
     color: var(--secondary-text-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
 }
+
 .site-nav .link.current {
     color: var(--accent-color);
 } 
+
 .adress-nav .link {
     color: var(--primary-text-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
 }
 .adress-nav .link:hover,
 .adress-nav .link:focus {
-    color: var(--accent-color)
+    color: var(--accent-color);
 }
 
 
@@ -78,15 +106,23 @@ ul {
 
 .hero {
     --fon-color:#2F303A;
-    background-color: var(--fon-color) 
+    background-color: var(--fon-color);
 }
 .hero .title {
     color: var(--white-text-color);
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
 .button.order {
+    font-family: inherit;
     background-color: var(--accent-color);
-    color: var(--white-text-color)
+    color: var(--white-text-color);
 }
 
 
@@ -95,9 +131,24 @@ ul {
 
 .feature .title {
     color: var(--secondary-text-color);
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+.feature .text {
 }
 
 /* чем мы занимаемся */
+.work .title {
+    color: var(--secondary-text-color);
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
 
 
 /* Наща клманда */
@@ -105,11 +156,25 @@ ul {
     background-color: var(--secondary-fon-color);
 }
 .team .title {
-    color: var(--secondary-text-color) ;
+    color: var(--secondary-text-color);
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
 }
-.team-list .title {
-    color: var(--secondary-text-color)
+.team-list .name {
+    color: var(--secondary-text-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18; 
 }
+.team-list .job {
+    font-size: 16px;
+    line-height: 1.18;
+}
+
 
 
 /* Подвал */
@@ -118,12 +183,25 @@ ul {
 }
 .log {
     color: var(--white-text-color);
+
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    
 }
 .adress {
     color: var(--white-text-color);
+    
+    font-style: normal;
+    text-decoration: none;
+
 }
 .contact {
     color: var(--footer-adress-color);
+
+    font-style: normal;
+    text-decoration: none;
 }
 
 
@@ -134,18 +212,32 @@ ul {
 /* кнопки */
 
 .button {
-    background-color: var(--main-fon-color);
-    color: var(--secondary-text-color)
+    font-family: inherit;
+    background-color: var(--secondary-fon-color);
+    color: var(--secondary-text-color);
+    font-weight: 500;
+     font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
 }
 .button:hover,
 .button:focus {
+
     background-color: var(--accent-color);
-    color: var(--white-text-color)
+    color: var(--white-text-color);
 }
 
 
-/* Проект стилизация */
+/* Проекты стилизация */
 
 .project .title {
-    color: var(--secondary-text-color)
+    color: var(--secondary-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.project .concept {
+    font-size: 16px;
+    line-height: 1.87;
 }
